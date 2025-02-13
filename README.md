@@ -1,16 +1,20 @@
-Project Name: aws-cost-optimizer
-Project Description
-The AWS Cost Optimization Tool is a Python-based solution that analyzes AWS costs using the AWS Cost Explorer API. It generates insights on daily, weekly, or monthly AWS spending, identifies high-cost services, and suggests potential cost-saving opportunities.
+# AWS Cost Optimizer
 
-Features
-✅ Retrieve cost breakdown by service (EC2, S3, Lambda, etc.).
-✅ Identify trends in AWS spending.
-✅ Generate cost-saving recommendations.
-✅ Store data in CSV format for further analysis.
-✅ Send email alerts when costs exceed a threshold (Optional).
+## 📌 Overview
+AWS Cost Optimizer is a Python-based tool that analyzes AWS cost data using the AWS Cost Explorer API. It provides **daily cost breakdowns**, **identifies high-cost services**, and **suggests optimizations**.
 
-Tech Stack
-Python 🐍
-AWS Cost Explorer API
-Boto3 (AWS SDK for Python)
-Pandas (Data processing & visualization)
+## 🚀 Features
+✅ Retrieves AWS cost usage for the last 7 days  
+✅ Breaks down costs by **AWS service**  
+✅ Exports data to **CSV format**  
+✅ Can be extended to send alerts for high costs  
+
+## 🛠️ Setup & Installation
+### 1️⃣ Prerequisites
+- **Python 3.7+**
+- **AWS CLI configured** (`aws configure`)
+- **IAM Role with `ce:GetCostAndUsage` permission**
+
+### 2️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
