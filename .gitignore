@@ -1,0 +1,4 @@
+__pycache__/
+*.csv
+.env
+aws_cost_report.csv
